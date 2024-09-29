@@ -57,7 +57,7 @@ While building the e-commerce web application, several challenges were encounter
    start: npm run dev
    Login as a Admin
    email:irfan@gmail.com
-   password:1234
+   password:12345
 
 
 
