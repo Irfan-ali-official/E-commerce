@@ -31,6 +31,12 @@ This project is an **E-Commerce Project** built using **React**, **Node.js**, an
 - View
 - Controller
 
+## Issues Encountered
+
+```
+While building the e-commerce web application, several challenges were encountered. One major hurdle was ensuring proper authentication and authorization using JWT tokens, which required careful handling of tokens across both frontend and backend to secure user sessions and restrict access based on roles. Another challenge involved retrieving and displaying user-specific orders, ensuring data security, and avoiding cross-user data leakage. Debugging middleware to handle these processes effectively required extensive logging and testing. Additionally, maintaining a smooth user experience, particularly in areas like dynamic profile updates and real-time order management, presented performance optimization challenges. Integrating and ensuring proper styling with Tailwind CSS to create a responsive and user-friendly dashboard also required thorough testing to meet design expectations.
+```
+
 ## Installation
 
 1. **Clone the repository**:
