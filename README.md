@@ -34,6 +34,7 @@ This project is an **E-Commerce Project** built using **React**, **Node.js**, an
 ## Installation
 
 1. **Clone the repository**:
+
    ```bash
    git clone<This repo>
    cd ecommerce-admin-dashboard
@@ -46,4 +47,6 @@ This project is an **E-Commerce Project** built using **React**, **Node.js**, an
    MONGO_URI=MongoDbURL
    JWT_SECRET=Your__Secrete_JWT
    PORT =PORT
+
+
    ```
