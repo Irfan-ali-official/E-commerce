@@ -48,7 +48,7 @@ While building the e-commerce web application, several challenges were encounter
    JWT_SECRET=Your__Secrete_JWT
    PORT =PORT
    git clone https://github.com/Irfan-ali-official/E-commerce.git
-   cd ecommerce-admin-dashboard
+   cd E-commerce
    npm i
    cd backend
    start: npm run dev
