@@ -42,6 +42,11 @@ While building the e-commerce web application, several challenges were encounter
 1. **Clone the repository**:
 
    ```bash
+   .env already provided just add values to
+   these
+   MONGO_URI=MongoDbURL
+   JWT_SECRET=Your__Secrete_JWT
+   PORT =PORT
    git clone<This repo>
    cd ecommerce-admin-dashboard
    npm i
@@ -50,9 +55,10 @@ While building the e-commerce web application, several challenges were encounter
    cd frontend
    npm i
    start: npm run dev
-   MONGO_URI=MongoDbURL
-   JWT_SECRET=Your__Secrete_JWT
-   PORT =PORT
+   Login as a Admin
+   email:irfan@gmail.com
+   password:1234
+
 
 
    ```
