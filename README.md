@@ -47,7 +47,7 @@ While building the e-commerce web application, several challenges were encounter
    MONGO_URI=MongoDbURL
    JWT_SECRET=Your__Secrete_JWT
    PORT =PORT
-   git clone<https://github.com/Irfan-ali-official/E-commerce.git>
+   git clone https://github.com/Irfan-ali-official/E-commerce.git
    cd ecommerce-admin-dashboard
    npm i
    cd backend
