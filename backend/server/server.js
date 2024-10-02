@@ -1,11 +1,11 @@
 import express from "express";
 import mongoose from "mongoose";
-import adminRoutes from "./routes/adminRoutes.js";
-import authRoutes from "./routes/authRoutes.js";
-import userRoutes from "./routes/userRoutes.js";
-import productRoutes from "./routes/productRoutes.js";
+import adminRoutes from "../routes/adminRoutes.js";
+import authRoutes from "../routes/authRoutes.js";
+import userRoutes from "../routes/userRoutes.js";
+import productRoutes from "../routes/productRoutes.js";
 //import cartRoutes from "./routes/cartRoutes.js";
-import orderRoutes from "./routes/orderRoutes.js";
+import orderRoutes from "../routes/orderRoutes.js";
 //import paymentRoutes from "./routes/paymentRoutes.js";
 
 import dotenv from "dotenv";

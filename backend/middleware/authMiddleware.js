@@ -41,34 +41,3 @@ export const adminAuth = (req, res, next) => {
   });
 };
 
-// // middleware/auth.js
-// import jwt from "jsonwebtoken";
-// import dotenv from "dotenv";
-// dotenv.config();
-
-// const JWT_SECRET = process.env.JWT_SECRET || "your_jwt_secret";
-
-// // Middleware to verify any user
-// export const auth = (req, res, next) => {
-//   const token = req.header("Authorization");
-//   if (!token)
-//     return res.status(401).json({ message: "No token, authorization denied" });
-
-//   try {
-//     const decoded = jwt.verify(token, JWT_SECRET);
-//     req.user = decoded;
-//     next();
-//   } catch (err) {
-//     res.status(401).json({ message: "Token is not valid" });
-//   }
-// };
-
-// // Middleware for admin-only access
-// export const adminAuth = (req, res, next) => {
-//   auth(req, res, () => {
-//     if (req.user.role !== "admin") {
-//       return res.status(403).json({ message: "Access denied: Admins only" });
-//     }
-//     next();
-//   });
-// };
