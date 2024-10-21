@@ -19,8 +19,6 @@ const CartPage = () => {
   );
 
   const [isModalOpen, setModalOpen] = useState(false);
-
-  // Get the token from localStorage
   const userToken = localStorage.getItem("token");
 
   console.log("User Token:", userToken); // Log the token to ensure it's correctly retrieved
@@ -69,7 +67,6 @@ const CartPage = () => {
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-4">Your Cart</h1>
-
       {cartItems.length === 0 ? (
         <p>Your cart is empty. Add items to the cart first.</p>
       ) : (

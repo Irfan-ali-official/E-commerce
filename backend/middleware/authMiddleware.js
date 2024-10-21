@@ -7,16 +7,11 @@ const JWT_SECRET = process.env.JWT_SECRET || "your_jwt_secret";
 // Middleware to verify any user
 export const auth = (req, res, next) => {
   const authHeader = req.header("Authorization");
-  console.log("Auth Header:", authHeader);
 
   if (!authHeader) {
     return res.status(401).json({ message: "No token, authorization denied" });
   }
-
-  // Split the Bearer token and get the actual token part
   const token = authHeader.split(" ")[1];
-
-  console.log("Extracted Token:", token);
   if (!token) {
     return res.status(401).json({ message: "No token, authorization denied" });
   }
@@ -40,4 +35,3 @@ export const adminAuth = (req, res, next) => {
     next();
   });
 };
-

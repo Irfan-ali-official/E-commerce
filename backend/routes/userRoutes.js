@@ -2,7 +2,7 @@ import express from "express";
 import { auth } from "../middleware/authMiddleware.js";
 
 const router = express.Router();
-router.get("/checkout", auth, (req, res) => {
+router.get("/user/checkout", auth, (req, res) => {
   res.json({ message: "Proceed to checkout" });
 });
 

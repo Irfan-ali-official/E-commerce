@@ -6,7 +6,6 @@ const ProfilePage = () => {
   const { user } = useAuth(); // Make sure user is available
   const [orders, setOrders] = useState([]);
   const [loadingOrders, setLoadingOrders] = useState(true); // Add loading state for orders
-
   useEffect(() => {
     if (user && user.userId && user.role !== "admin") {
       const token = localStorage.getItem("token");
@@ -53,6 +52,7 @@ const ProfilePage = () => {
         <h2 className="text-2xl font-semibold text-gray-700 mb-4">
           Account Details
         </h2>
+
         <p className="text-lg text-gray-600 mb-2">
           <strong>Name:</strong> {user?.name || "No name available"}
         </p>

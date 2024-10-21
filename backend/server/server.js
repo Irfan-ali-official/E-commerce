@@ -4,9 +4,7 @@ import adminRoutes from "../routes/adminRoutes.js";
 import authRoutes from "../routes/authRoutes.js";
 import userRoutes from "../routes/userRoutes.js";
 import productRoutes from "../routes/productRoutes.js";
-//import cartRoutes from "./routes/cartRoutes.js";
 import orderRoutes from "../routes/orderRoutes.js";
-//import paymentRoutes from "./routes/paymentRoutes.js";
 
 import dotenv from "dotenv";
 import cors from "cors";
@@ -21,12 +19,9 @@ app.use(cors());
 
 app.use("/api", adminRoutes);
 app.use("/api", authRoutes);
-app.use("/api/user", userRoutes);
+app.use("/api", userRoutes);
 app.use("/api", productRoutes);
-//app.use("/api", cartRoutes);
 app.use("/api", orderRoutes);
-//app.use("/api", paymentRoutes);
-
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log(`Connected to DB!`))

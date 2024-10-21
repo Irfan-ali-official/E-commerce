@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-// import Header from "./components/Header";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 import AdminDashboard from "./pages/AdminDashboard";
@@ -9,12 +8,10 @@ import CheckoutPage from "./pages/CheckoutPage.jsx";
 import AdminRoute from "./components/AdminRoute";
 import UserRoute from "./components/UserRoute";
 import Navbar from "./components/Navbar";
-
-// import CartPage from "./pages/CartPage";
 import ProfilePage from "./pages/ProfilePage";
 import { AuthProvider } from "./context/AuthContext";
 import { Provider } from "react-redux";
-import store from "./store/store.js"; // Import the store
+import store from "./store/store.js";
 
 const App = () => {
   return (
@@ -27,7 +24,6 @@ const App = () => {
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/signup" element={<SignupPage />} />
-            {/* <Route path="/cart" element={<CartPage />}></Route> */}
             <Route
               path="/admin-dashboard"
               element={

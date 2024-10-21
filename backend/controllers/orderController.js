@@ -8,11 +8,7 @@ export const createOrder = async (req, res) => {
   if (!userId || !items || !totalAmount || !paymentMethod || !accountNumber) {
     return res.status(400).json({ message: "All fields are required" });
   }
-  console.log("Request body:", req.body); // Log request body
-  console.log("Authenticated user:", req.user); // Log the authenticated user
-
   try {
-    // Create order logic
     const order = new Order({
       userId, // The authenticated user ID
       items,
@@ -29,15 +25,11 @@ export const createOrder = async (req, res) => {
     res.status(500).json({ message: "Error creating order", error });
   }
 };
-// controllers/orderController.js
 
 export const getMyOrders = async (req, res) => {
   try {
-    const userId = req.params.userId; // Assuming the userId is passed via params
-    console.log("Fetching orders for user:", userId);
-
-    // Find orders where the userId matches the authenticated user
-    const orders = await Order.find({ userId }); // Fetch orders only for this user
+    const userId = req.params.userId;
+    const orders = await Order.find({ userId });
 
     if (!orders.length) {
       return res
